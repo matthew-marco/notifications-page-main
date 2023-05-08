@@ -1,0 +1,223 @@
+/* start global rules */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-one: hsl(211, 68%, 94%);
+  --Light-grayish-blue-two: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* end global rules */
+
+
+/* start header  */
+
+main .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+
+}
+
+main .container h1 span {
+  color: white;
+  background-color: var(--Blue);
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: 28px;
+  margin-left: 5px;
+  text-align: center;
+
+}
+
+main .container h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+main .container a {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--Very-dark-blue);
+  font-weight: 500;
+}
+
+main .container a:hover {
+  color: var(--Blue);
+}
+
+/* end  header  */
+
+
+
+/* start notifactions */
+.notifactions .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.notifactions .container .notifaction {
+  display: flex;
+  align-items: center;
+  align-self: center;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  width: 65%;
+  gap: 15px;
+
+
+
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chess {
+  align-self: flex-end;
+}
+
+.notifactions .container .notifaction .img img {
+  width: 70px;
+
+
+}
+
+.kimberly {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  gap: 15px;
+}
+
+.imgtwo {
+  cursor: pointer;
+}
+
+.notifactions .container .notifaction .text h2 {
+  color: var(--Very-dark-blue);
+  font-size: 15px;
+  position: relative;
+  font-weight: 700;
+
+}
+
+.notifactions .container .notifaction .text h2:hover {
+  color: var(--Blue);
+  cursor: pointer;
+}
+
+.notifactions .container .notifaction .text h2 a:hover {
+  color: var(--Blue);
+  cursor: pointer;
+}
+
+.notifactions .container .notifaction .text h2 span {
+  color: var(--Grayish-blue);
+}
+
+.notifactions .container .notifaction .text h2 span span {
+  color: var(--Dark-grayish-blue);
+}
+
+.notifactions .container .notifaction .text h2 span span:hover {
+  cursor: pointer;
+  color: var(--Blue);
+}
+
+.notifactions .container .notifaction .text h2 a {
+  text-decoration: none;
+  color: var(--Blue);
+}
+
+.notifactions .container .notifaction .text p {
+  color: var(--Dark-grayish-blue);
+  font-weight: 500;
+}
+
+.notifactions .container .notifaction .content {
+  border: 1px solid var(--Grayish-blue);
+  font-size: 16px;
+  padding: 20px;
+
+  margin-bottom: 0px;
+  color: var(--Dark-grayish-blue);
+  font-size: 18px;
+}
+
+.notifactions .container .notifaction .content:hover {
+  background-color: var(--Light-grayish-blue-one);
+  cursor: pointer;
+}
+
+.notifactions .container .rizky {
+  align-items: flex-start;
+}
+
+.notifactions .container .rizky p {
+  margin-bottom: 20px;
+}
+
+.notifaction.active h2::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/* end notifactions */
