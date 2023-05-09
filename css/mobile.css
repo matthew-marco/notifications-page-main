@@ -1,7 +1,13 @@
 /* start header  */
 
 
+main .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
 
+}
 main .container h1 span {
   font-size: 20px;
 
@@ -27,7 +33,7 @@ main .container a {
 
 .notifactions .container .notifaction{
 
-  width: 75%;
+  width: 95%;
 
 
 
